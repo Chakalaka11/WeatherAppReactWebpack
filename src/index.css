@@ -1,0 +1,13 @@
+/* font intializing */
+@font-face{
+  font-family: "Hattori Hanzo";
+  src: url(fonts/Hattori_Hanzo.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Hattori Hanzo";
+}
