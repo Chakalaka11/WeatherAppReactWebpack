@@ -1,14 +1,10 @@
 const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const HtmlWebpackPlugin = require
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const config = {
   entry: "./src/index.jsx",
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
-  },
   module: {
     rules: [
       {
@@ -34,8 +30,13 @@ const config = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: './src/index.html' })
   ],
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js"
+  },
   resolve: {
     extensions: [".js", ".jsx"]
   },
