@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npx webpack"
+    "build": "npx webpack",
+    "serve": "npx webpack-dev-server"
   },
   "keywords": [
     "react",

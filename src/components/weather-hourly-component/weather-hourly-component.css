@@ -1,0 +1,8 @@
+p{
+  margin: unset;
+  text-align: center;
+}
+.weather-hourly{
+  margin: 2px 5px;
+  width: 20vw;
+}

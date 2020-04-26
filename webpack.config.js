@@ -41,7 +41,8 @@ const config = {
     extensions: [".js", ".jsx"]
   },
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./dist",
+    port: 5050
   }
 };
 
