@@ -1,0 +1,10 @@
+.weather-dialy{
+  margin: 5px 0px;
+  width: 40vw;
+}
+.weather-dialy__label--date{
+  font-size: 40px;
+}
+.weather-dialy__label--temperature{
+  font-size: 55px;
+}

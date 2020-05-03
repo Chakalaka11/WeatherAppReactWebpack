@@ -3,3 +3,12 @@
   justify-content: flex-start;
   overflow: auto;
 }
+
+.celsius{
+  font-size: 30px;
+}
+
+p{
+  margin: unset;
+  text-align: center;
+}

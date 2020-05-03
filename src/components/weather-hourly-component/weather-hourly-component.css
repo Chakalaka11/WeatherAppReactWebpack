@@ -1,8 +1,10 @@
-p{
-  margin: unset;
-  text-align: center;
-}
 .weather-hourly{
   margin: 2px 5px;
-  width: 20vw;
+  width: 17vw;
+}
+.weather-hourly__label--time{
+  font-size: 30px;
+}
+.weather-hourly__label--temperature{
+  font-size: 40px;
 }

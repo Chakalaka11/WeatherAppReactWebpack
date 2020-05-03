@@ -1,0 +1,12 @@
+.weather-current{
+  text-align: center;
+}
+.weather-current__label--temperature-main{
+  font-size: 100px;
+}
+.weather-current__label--temperature-feels-str{
+  font-size: 40px;
+}
+.weather-current__label--temperature-feels{
+  font-size: 45px;
+}

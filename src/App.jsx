@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import "./App.css";
 //import child components
-import { Time, Weather, HourlyWeather } from "./components";
+import { CurrentWeather, HourlyWeather, DailyWeather } from "./components";
 import { getCurrentWeather } from "./services";
 import { weatherModel } from "./models";
 
@@ -37,10 +37,19 @@ class App extends Component {
         break;
       hourlyWeather.push(<HourlyWeather key={element.dt} forecast={element} />);
     }
-    
+
+    let dailyWeather = [];
+    for (let i = 0; i < this.state.weather.daily.length; i++) {
+      const element = this.state.weather.daily[i];
+      dailyWeather.push(<DailyWeather key={element.dt} forecast={element} />);
+    }
+
     return (
       <div className="App">
-        <Weather currentForecast={this.state.weather.current} />
+        <div className="flex">
+          {dailyWeather}
+        </div>
+        <CurrentWeather currentForecast={this.state.weather.current} />
         <div className="flex">
           {hourlyWeather}
         </div>
@@ -49,4 +58,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export { App };

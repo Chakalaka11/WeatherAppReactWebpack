@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './weather-component.css';
+import './weather-current-component.css';
 import { forecastModel } from '../../models'
 
-class Weather extends Component {
+class CurrentWeather extends Component {
   constructor(props) {
     super(props);
   }
@@ -17,12 +17,12 @@ class Weather extends Component {
     let tempFormatted = 
       Math.round(this.props.currentForecast.temp) + " C°";
     return (
-      <div className="block--weather">
-        <p className="label--temperature-main">{tempFormatted}</p>
-        <p className="label--temperature-feels-str">Feels like</p>
-        <p className="label--temperature-feels">{feelsLikeFormatted}</p>
+      <div className="weather-current">
+        <p className="weather-current__label--temperature-main">{tempFormatted}</p>
+        <p className="weather-current__label--temperature-feels-str">Feels like</p>
+        <p className="weather-current__label--temperature-feels">{feelsLikeFormatted}</p>
       </div>
     );
   }
 }
-export { Weather };
+export { CurrentWeather };
