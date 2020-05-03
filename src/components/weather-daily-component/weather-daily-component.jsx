@@ -24,8 +24,8 @@ class DailyWeather extends Component {
         <div className="weather-dialy">
           <p className="weather-dialy__label--date">{dateFormatted}</p>
           <p className="weather-dialy__label--temperature">
-            {minTemperatureFormatted} <span className="celsius">C°</span> 
-            – 
+            {minTemperatureFormatted} <span className="celsius">C°</span>
+            –
             {maxTemperatureFormatted} <span className="celsius">C°</span>
           </p>
         </div>
