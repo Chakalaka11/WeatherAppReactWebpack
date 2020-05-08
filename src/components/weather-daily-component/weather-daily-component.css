@@ -5,6 +5,9 @@
 .weather-dialy__label--date{
   font-size: 40px;
 }
+.weather-dialy__label--date--offday{
+  color: #c02b2b;
+}
 .weather-dialy__label--temperature{
   font-size: 55px;
 }
